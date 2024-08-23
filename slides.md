@@ -23,6 +23,7 @@ Slide for FUK Meetup
 
 ---
 transition: fade-out
+layout:
 ---
 
 # What is DebConf?
@@ -34,8 +35,6 @@ DebConf is a Project by Debian
 - **Enable face-to-face interactions** - Many Debian contributors find communication much easier face-to-face than online. Intense technical discussions at DebConf can shortcut weeks or months of mailing list threads.
 - **Provide talks and video** - DebConf talks can help to spread information beyond those already heavily involved in an area of Debian work, and can help to recruit more people to work on areas of Debian.
 - **Motivate the local community** - It is positive if DebConf leads to a greater involvement in Debian from locals in the region where it is held.
-
-
 
 <style>
 h1 {
@@ -49,7 +48,6 @@ h1 {
 }
 </style>
 
-
 ---
 layout: image-left
 image: https://debconf-video-team.pages.debian.net/docs/_images/room_setup_video.svg
@@ -58,19 +56,17 @@ transition: fade-out
 
 # The VideoTeam
 
-
 - **Main Feed** - code highlighting, live coding with autocompletion
 
-- **Streaming Backend**  
+- **Streaming Backend**
   - uses nginx-rtmp-module (also used by FOSDEM and CCC)
   - downscales internally, using ffmpeg, for lower quality streams
-   - converts RTMP streams to HLS with adaptive quality
+  - converts RTMP streams to HLS with adaptive quality
 - Streaming Frontends are plain HTTPS caching proxies, geographically distrubuted
 - all configured in the live.debconf.org DNS zone with a small TTL
 - javascript player
-<br>
-<br>
-
+  <br>
+  <br>
 
 <style>
 h1 {
@@ -101,15 +97,17 @@ The Review system is called SReview
 
 - It is written by Wouter
 - fully automatic pipeline for
-   - preview generation
+  - preview generation
   - review of start and end cut times
-  -final cut generation
+    -final cut generation
   - video transcoding
   - archive publication
 - also used by FODSEM
 
-
 ---
+transition: slide-down
+level: 2
+layout:
 ---
 
 # The old FTP Archive
@@ -123,21 +121,20 @@ Yes, you heard it right, FTP Archive
   - scans conference websites and the meetings archive for data
   - https://salsa.debian.org/debconf-video-team/archive-meta
   - can be eventually used for a proper frontend
-  - supports all the kinds of files we have 
-
+  - supports all the kinds of files we have
 
 ---
 layout:
 ---
-
 # Youtube
- Peertubeil മാത്രം അല്ലടാ അങ്ങ് യൂട്യൂബിലും ഉണ്ടെടാ പിടി
+
+Peertubeil മാത്രം അല്ലടാ അങ്ങ് യൂട്യൂബിലും ഉണ്ടെടാ പിടി
 
 There were people who randomly upload our videos to Youtube, so why not we do it.
 
 - Channel: https://deb.li/dcvideoyt
   - per-event playlishts
-  -  feeds from the archive-meta data
+  - feeds from the archive-meta data
   - generates automatic closed captions which are hilarious of course
 - scripts: https://salsa.debian.org/debconf-video-team/youtube.git
 
@@ -156,9 +153,11 @@ layout: image
 image: https://debconf-video-team.pages.debian.net/docs/_images/streaming.svg
 ---
 
+Stream
 
 ---
-
+layout:
+---
 # Documentation
 
 - static documentation goes in a sphinx repository
@@ -167,7 +166,16 @@ image: https://debconf-video-team.pages.debian.net/docs/_images/streaming.svg
   - also has the live streanm player for MiniConfs
 - dynamic documentation on the wiki
   - https://wiki.debian.org/Teams/Debconf/Video
-  - slowly migrating from the DebConf wiki to the Debian wiki   
+  - slowly migrating from the DebConf wiki to the Debian wiki
+
+---
+layout: image
+image: https://i.ibb.co/VNxytsj/IMG-20221029-104158.jpg
+class: text-center
+---
+
+# Abraham Raji
+
 ---
 layout: center
 class: text-center
@@ -176,6 +184,7 @@ class: text-center
 # Thank you
 
 ## I've been Akash
+
 Network and Systems Engineer
 
 status.aks.one
